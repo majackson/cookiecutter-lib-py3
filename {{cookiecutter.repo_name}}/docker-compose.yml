@@ -1,9 +1,0 @@
-version: '2'
-services:
-    {{cookiecutter.repo_name}}:
-        container_name: {{cookiecutter.repo_name}}
-        build: .
-        environment:
-            - PYTHONUNBUFFERED=1
-        volumes:
-            - .:/code
