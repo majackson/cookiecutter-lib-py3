@@ -9,3 +9,6 @@ bootstrap:
 
 test:
 	docker-compose run --name {{cookiecutter.repo_name}}_tests --rm {{cookiecutter.repo_name}} py.test --strict $${TEST_ARGS:-"tests/"}
+
+shell:
+	docker-compose run --name {{cookiecutter.repo_name}}_shell --rm pyiptis python3
